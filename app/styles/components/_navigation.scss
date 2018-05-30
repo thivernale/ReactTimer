@@ -1,0 +1,16 @@
+// Define overrides of foundation-provided classes
+.top-bar, .top-bar ul {
+    background-color: $nav-background;
+}
+
+// nested selectors:
+.top-bar {
+    .menu-text {
+        color: $nav-text-color;
+    }
+    .menu > .menu-text > a {
+        display: inline;
+        padding: 0;
+    }
+}
+
