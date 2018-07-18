@@ -16,7 +16,7 @@ module.exports = function(config) {
                 timeout: '5000'
             }
         },
-        // require weback config file and pass config object
+        // require webpack config file and pass config object
         webpack: webpackConfig,
         webpackServer: {
             noInfo: true

@@ -4,9 +4,9 @@ var Navigation = require('Navigation');
 var Main = (props) => {
     return (
         <div>
-            <Navigation />
             <div>
                 <div>
+                    <Navigation />
                     <p>Main.jsx rendered</p>
                     {props.children}
                 </div>
