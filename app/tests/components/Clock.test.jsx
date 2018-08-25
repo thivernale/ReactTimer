@@ -18,7 +18,7 @@ describe('Clock', () => {
     // test starts with it() function
     // arg #1: test description
     // arg #2: function that performs assertions
-    it('sould exist', () => {
+    it('should exist', () => {
         expect(Clock).toExist();
     });
 
