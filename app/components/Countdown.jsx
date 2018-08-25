@@ -10,7 +10,7 @@ var Countdown = React.createClass({
             countdownStatus: 'stopped'
         };
     },
-    // component lifecycle method
+    // component lifecycle methods
     // that gets called automatically by React
     // when component props or state are updated
     componentDidUpdate: function(prevProps, prevState) {
@@ -31,6 +31,28 @@ var Countdown = React.createClass({
             }
         }
     },
+    // get automatically fired before props and state are updated
+    /*componentWillUpdate: function(nextProps, nextState) {
+
+    },*/
+    // gets automatically fired by react as component gets first loaded (before it gets rendered to the screen)
+    // no access to refs yet
+    /*componentWillMount: function() {
+        console.log('component will mount');
+    },*/
+    // gets automatically fired by react as component gets first loaded (after it gets rendered to the screen)
+    // access to refs
+    /*componentDidMount: function() {
+        console.log('component did mount');
+    },*/
+    // gets automatically fired by react before component is removed from the DOM
+    componentWillUnmount: function() {
+        //console.log('component will unmount');
+        // clear the timer
+        clearInterval(this.timer);
+        this.timer = undefined;
+    },
+
     startTimer() {
         this.timer = setInterval(
             () => {
@@ -38,9 +60,15 @@ var Countdown = React.createClass({
                 this.setState({
                     count: newCount >= 0 ? newCount : 0
                 });
+
+                if (newCount === 0) {
+                    this.setState({
+                        countdownStatus: 'stopped'
+                    });
+                }
             },
-            1000)
-            ;
+            1000
+        );
     },
     handleSetCountdown: function(seconds) {
         this.setState({

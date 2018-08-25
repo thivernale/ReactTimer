@@ -5,6 +5,11 @@ var Controls = React.createClass({
         countdownStatus: React.PropTypes.string.isRequired,
         onStatusChange: React.PropTypes.func.isRequired
     },
+    // lifecycle method:
+    // gets automatically fired when props get updated by react
+    /*componentWillReceiveProps: function(newProps) {
+        console.log('component will receive props', newProps.countdownStatus);
+    },*/
     // using currying pattern:
     // function will generate and return a new function that will be called by onClick
     onStatusChange: function(newStatus) {
