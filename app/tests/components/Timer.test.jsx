@@ -2,9 +2,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var expect = require('expect');
-// doesn't work
-//var $ = require('jQuery');
-var $ = require('jquery/dist/jquery.min.js');
 var TestUtils = require('react-addons-test-utils');
 
 // require component to test

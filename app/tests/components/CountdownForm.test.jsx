@@ -2,7 +2,8 @@ var expect = require('expect');
 var React = require('react');
 var ReactDOM = require('react-dom');
 var TestUtils = require('react-addons-test-utils');
-var $ = require('jquery/dist/jquery.min.js');
+//var $ = require('jquery/dist/jquery.min.js');
+//or... add path to karma.conf.js and no need to require in each test file
 
 var CountdownForm = require('CountdownForm');
 

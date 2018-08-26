@@ -6,7 +6,10 @@ module.exports = function(config) {
         browsers: ['Chrome'],
         singleRun: true,
         frameworks: ['mocha'],
-        files: ['app/tests/**/*.test.jsx'],
+        files: [
+            'node_modules/jquery/dist/jquery.min.js',
+            'app/tests/**/*.test.jsx'
+        ],
         preprocessors: {
             // for all matching files we want to run webpack and use sourcemap
             'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']

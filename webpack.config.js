@@ -1,5 +1,6 @@
 // require webpack
 var webpack = require('webpack');
+var path = require('path');
 
 /**
  * configuration file for running webpack for project with
@@ -70,6 +71,11 @@ module.exports = {
                 // which folders should not be parsed
                 exclude: /(node_module|bower_components)/
             }
+        ]
+    },
+    sassLoader: {
+        includePaths: [
+            path.resolve(__dirname, './node_modules/foundation-sites/scss')
         ]
     },
     // enables creation of source maps that the browser understands
