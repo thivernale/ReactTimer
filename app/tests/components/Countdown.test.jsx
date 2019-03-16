@@ -19,7 +19,7 @@ describe('Countdown', () => {
     describe('handleSetCountdown', () => {
         // done argument specifies that test will be asynchonous and mocha should wait until it is done
         it('should set state to started and countdown', (done) => {
-            // render the component: pass jsx code as paramerer
+            // render the component: pass jsx code as parameter
             var countdown = TestUtils.renderIntoDocument(<Countdown />);
             // call method on the component
             countdown.handleSetCountdown(10);

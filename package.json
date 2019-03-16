@@ -12,7 +12,7 @@
     "app",
     "reactjs"
   ],
-  "author": "Tristesse Hivernale",
+  "author": "T Hivernale",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.17.1",
