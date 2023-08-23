@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0"
@@ -41,11 +41,11 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^5.0.0",
     "mocha": "^8.3.2",
-    "node-sass": "^6.0.0",
+    "node-sass": "^9.0.0",
     "react-addons-test-utils": "^0.14.6",
     "sass-loader": "^3.1.2",
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
-    "webpack": "^5.30.0"
+    "webpack": "^5.76.0"
   }
 }
